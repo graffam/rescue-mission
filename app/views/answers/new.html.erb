@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+
+<% if @answer.errors.any? %>
+  <ul>
+    <% @answer.errors.full_messages.each do |msg| %>
+    <li> <%= msg %> </li>
+    <% end %>
+  </ul>
+<% end %>
+<%= form_for @answer do |f| %>
+<%= f.text_area :answertext %>
+<%= f.submit "Post" %>
+<% end %>
