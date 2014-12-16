@@ -55,8 +55,8 @@ Rails.application.routes.draw do
   #   end
 
   resources :questions do
+    resources :answers
   end
-  resources :answers do
-  end 
+
 
 end
