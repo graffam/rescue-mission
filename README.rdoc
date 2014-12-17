@@ -26,3 +26,6 @@ Things you may want to cover:
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
+
+Everything is up and ready to go, All you need to do is download, and run server.
+See schema for db design. Tests are included to ensure everything is working.
