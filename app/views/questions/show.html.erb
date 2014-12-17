@@ -5,7 +5,7 @@
 
 <% if @answer.errors.any? %>
 <ul>
-  <% @answer.errors.full_messages.each do |msg| %>
+  <% @answer.errors.messages[:answertext].each do |msg| %>
   <li> <%= msg %> </li>
   <% end %>
 </ul>

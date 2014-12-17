@@ -8,9 +8,9 @@ class QuestionsController < ApplicationController
     @answer = Answer.new
     @question = Question.find_by(:id == params[:id])
     if @question.update(question_params)
-      redirect_to question_path
+      redirect_to question_path(@question)
     else
-      render question_path
+      render 'edit'
     end
   end
 

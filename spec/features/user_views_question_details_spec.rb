@@ -25,4 +25,4 @@ feature 'view indiviual questions' do
     expect(page).to have_content(question1.title)
     expect(page).to have_content(question1.description)
   end
-end 
+end

@@ -2,7 +2,7 @@
 <ul>
   <% if @questions %>
     <% @questions.each do |question| %>
-    <li><a href="/questions/<%= question.id %>"><%=question.title%>, <%= question.created_at %></a></li>
+    <li><a id ="Edit" href="/questions/<%= question.id %>"><%=question.title%>, <%= question.created_at %></a></li>
     <% end %>
   <% end %>
 </ul>

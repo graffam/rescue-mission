@@ -6,11 +6,13 @@ class AnswersController < ApplicationController
   end
   def create
     @question = Question.find_by(:id == answer_params[:question_id])
-    binding.pry
     @answer = Answer.new(answer_params)
     @answer.user_id = 1
-    @answer.save
-    render 'questions/show'
+    if @answer.save
+      redirect_to question_path(@question)
+    else
+      render 'questions/show'
+    end
   end
 
   def show
